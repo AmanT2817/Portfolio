@@ -1,250 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amanuel Tadesse | Software Engineer</title>
-    <meta
-      name="description"
-      content="Amanuel Tadesse is a software engineer focused on building polished digital products, practical backend systems, and delightful user experiences."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <div class="container nav-wrap">
-          <a class="brand" href="#home">Amanuel<span>.dev</span></a>
-          <nav class="nav" aria-label="Main navigation">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          <a class="nav-button" href="#contact">Let’s talk</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amanuel Tadesse | Portfolio</title>
+  <meta name="description" content="Amanuel Tadesse is a computer scientist focused on practical, user-centered digital products and problem-solving systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">Aman<span>.dev</span></a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+
+        <div class="menu-icon" id="menu-icon" aria-label="Open menu">
+          <img src="menu.png" alt="Menu icon" />
         </div>
-      </header>
+      </div>
 
-      <main>
-        <section id="home" class="hero">
-          <div class="container hero-grid">
-            <div class="hero-copy reveal">
-              <p class="eyebrow">Software Engineer</p>
-              <h1>
-                Amanuel Tadesse
-              </h1>
-
-              <div class="role-line">
-                <span>I build</span>
-                <span id="typed-role">Full-Stack Products</span>
-              </div>
-
-              <p class="summary">
-                I design and build polished web experiences and practical software systems that solve real problems,
-                feel intuitive to use, and reflect thoughtful engineering decisions.
-              </p>
-
-              <div class="cta-row">
-                <a class="primary" href="#projects">View Projects</a>
-                <a class="secondary" href="#contact">Contact Me</a>
-              </div>
-
-              <ul class="quick-facts" aria-label="Quick facts">
-                <li>Open to work</li>
-                <li>React + Python</li>
-                <li>Frontend + Backend</li>
-              </ul>
-            </div>
-
-            <div class="hero-visual reveal">
-              <div class="orb orb-one"></div>
-              <div class="orb orb-two"></div>
-              <div class="profile-card">
-                <div class="badge">Available for opportunities</div>
-                <div class="avatar">AT</div>
-                <div class="tech-stack">
-                  <span>React</span>
-                  <span>Python</span>
-                  <span>Flask</span>
-                  <span>JavaScript</span>
-                  <span>C++</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="about" class="section">
-          <div class="container">
-            <div class="section-heading reveal">
-              <p class="eyebrow">About</p>
-              <h2>Building software with clarity and purpose.</h2>
-            </div>
-
-            <div class="about-box reveal">
-              <p>
-                I am a software engineer who enjoys translating ideas into dependable digital products.
-                My work blends frontend design, backend logic, and structured problem-solving in a way that keeps
-                the user experience smooth while the system remains practical and maintainable.
-              </p>
-              <p>
-                I’m especially interested in real-world product work: clean interfaces, thoughtful architecture,
-                and tools that help people complete tasks with less friction and more confidence.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="projects" class="section section-alt">
-          <div class="container">
-            <div class="section-heading reveal">
-              <p class="eyebrow">Projects</p>
-              <h2>Selected work and product thinking.</h2>
-            </div>
-
-            <div class="project-grid">
-              <article class="project-card reveal">
-                <div class="project-image project-one"></div>
-                <div class="project-body">
-                  <div class="chip-row">
-                    <span>C++</span>
-                    <span>OOP</span>
-                    <span>System Design</span>
-                  </div>
-                  <h3>Hospital Patient Management System</h3>
-                  <p>
-                    A structured application for managing patient data, records, appointments, and operational flows
-                    using clean logic and readable system architecture.
-                  </p>
-                  <ul>
-                    <li>Patient registration and lookup</li>
-                    <li>Appointment and queue handling</li>
-                    <li>Organized records and flow logic</li>
-                  </ul>
-                  <a href="https://github.com/AmanT2817/final-work" target="_blank" rel="noreferrer">View project</a>
-                </div>
-              </article>
-
-              <article class="project-card reveal">
-                <div class="project-image project-two"></div>
-                <div class="project-body">
-                  <div class="chip-row">
-                    <span>React</span>
-                    <span>Python</span>
-                    <span>Flask</span>
-                  </div>
-                  <h3>Recommendation Platform</h3>
-                  <p>
-                    A practical recommendation system for movies, music, and books, designed to deliver personalized
-                    suggestions and a clean user-centered interface.
-                  </p>
-                  <ul>
-                    <li>User login and registration</li>
-                    <li>Wishlist and recommendation flow</li>
-                    <li>Responsive dashboard and browsing</li>
-                  </ul>
-                  <a href="#contact">Discuss this build</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="experience" class="section">
-          <div class="container">
-            <div class="section-heading reveal">
-              <p class="eyebrow">Experience</p>
-              <h2>Growing through projects and real practice.</h2>
-            </div>
-
-            <div class="timeline reveal">
-              <div class="timeline-item">
-                <div class="dot"></div>
-                <div class="timeline-content">
-                  <span>2025</span>
-                  <h3>Graduate Software Engineer</h3>
-                  <p>Focused on product-oriented development, user-centered interfaces, and practical engineering work.</p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <div class="dot"></div>
-                <div class="timeline-content">
-                  <span>2023 - 2025</span>
-                  <h3>Frontend and problem-solving work</h3>
-                  <p>Built responsive interfaces and systems while strengthening my understanding of code quality and UI logic.</p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <div class="dot"></div>
-                <div class="timeline-content">
-                  <span>2021 - 2023</span>
-                  <h3>Computer science foundation</h3>
-                  <p>Developed a strong base in programming, logic, algorithms, and software structure through coursework and projects.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="skills" class="section section-alt">
-          <div class="container">
-            <div class="section-heading reveal">
-              <p class="eyebrow">Skills</p>
-              <h2>Core stack and strengths.</h2>
-            </div>
-
-            <div class="skills reveal">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>React</span>
-              <span>Python</span>
-              <span>Flask</span>
-              <span>C++</span>
-              <span>Git</span>
-              <span>GitHub</span>
-              <span>UI Design</span>
-              <span>Problem Solving</span>
-              <span>System Thinking</span>
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" class="section">
-          <div class="container">
-            <div class="contact-box reveal">
-              <div>
-                <p class="eyebrow">Contact</p>
-                <h2>Let’s build something meaningful.</h2>
-              </div>
-
-              <div class="contact-list">
-                <a href="mailto:amanueltetu@gmail.com">amanueltetu@gmail.com</a>
-                <a href="tel:+251932966803">(+251) 932 966 803</a>
-                <a href="https://github.com/AmanT2817" target="_blank" rel="noreferrer">github.com/AmanT2817</a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="container footer-wrap">
-          <p>© 2025 Amanuel Tadesse</p>
-          <p>Built for product thinking and real-world impact.</p>
-        </div>
-      </footer>
+      <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <script src="script.js"></script>
-  </body>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner fade-in">
+        <div class="profile-shell">
+          <div class="status-badge">Available for work</div>
+          <div class="profile-avatar">AT</div>
+          <div class="floating-tech tech-one">React</div>
+          <div class="floating-tech tech-two">Python</div>
+          <div class="floating-tech tech-three">JS</div>
+          <div class="floating-tech tech-four">C++</div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Scientist</p>
+          <h1>Amanuel Tadesse</h1>
+
+          <div class="role-swap">
+            <span class="role-prefix">I build</span>
+            <span id="role-rotator">Full-Stack developer</span>
+          </div>
+
+          <p class="summary">
+            I design and build practical digital products that balance clean user experience, technical depth,
+            and real-world problem solving. My focus is creating systems that feel intuitive and work reliably.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-secondary">Contact Me</a>
+            <a href="#" class="btn-ghost">Download CV</a>
+          </div>
+
+          <div class="mini-stats">
+            <span>Frontend</span>
+            <span>Backend</span>
+            <span>Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container fade-in">
+        <div class="section-heading">
+          <p class="section-kicker">About</p>
+          <h2>Building things that feel good and work well.</h2>
+        </div>
+
+        <div class="about-card">
+          <p>
+            I am a graduate software engineer who enjoys turning ideas into useful, polished digital experiences.
+            I am especially interested in web development, product thinking, and building tools that solve meaningful problems.
+          </p>
+          <p>
+            My background mixes frontend work, backend logic, and structured problem solving. I care about writing clean code,
+            designing thoughtful interfaces, and creating projects that communicate both technical skill and clarity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt-bg">
+      <div class="container fade-in">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2>Selected work.</h2>
+        </div>
+
+        <article class="project-card">
+          <div class="project-media">
+            <img src="Screenshot1.png" alt="Hospital management system interface" />
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="pill">C++</span>
+              <span class="pill">Data Structures</span>
+              <span class="pill">OOP</span>
+            </div>
+            <h3>Hospital Patient Management System</h3>
+            <p>
+              A structured system designed to manage patient records, appointment flow, and medical history using efficient data structures and schema-driven logic.
+            </p>
+            <ul>
+              <li>Patient registration and search</li>
+              <li>Medical history tracking</li>
+              <li>Queue-based appointment handling</li>
+              <li>Organized, modular system design</li>
+            </ul>
+            <a href="https://github.com/AmanT2817/final-work" target="_blank" rel="noopener noreferrer" class="project-link">View GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card reversed">
+          <div class="project-media">
+            <img src="Screenshot2.png" alt="Application workflow and patient interface" />
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="pill">System Design</span>
+              <span class="pill">Problem Solving</span>
+              <span class="pill">Software</span>
+            </div>
+            <h3>Practical Systems Thinking</h3>
+            <p>
+              This project reflects my approach to software engineering: clear organization, modularity, and practical decisions that make a system easier to use and maintain.
+            </p>
+            <ul>
+              <li>Structured architecture</li>
+              <li>Readability and maintainability</li>
+              <li>Real-world workflow modeling</li>
+              <li>Focused, user-oriented logic</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container fade-in">
+        <div class="section-heading">
+          <p class="section-kicker">Experience</p>
+          <h2>Growing through projects and problem solving.</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">2025</p>
+              <h3>Graduate Software Engineer</h3>
+              <p>Working on software projects that combine technical depth, portfolio quality, and practical product thinking.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">2023 - 2025</p>
+              <h3>Frontend & Product-Focused Learning</h3>
+              <p>Built responsive interfaces, improved technical understanding, and developed problem-solving habits through hands-on projects.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-date">2021 - 2023</p>
+              <h3>Computer Science Foundation</h3>
+              <p>Focused on programming fundamentals, algorithms, logic, data structures, and software design principles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt-bg">
+      <div class="container fade-in">
+        <div class="section-heading">
+          <p class="section-kicker">Skills</p>
+          <h2>Core tools and strengths.</h2>
+        </div>
+
+        <div class="skills-marquee" aria-label="Skills marquee">
+          <div class="skills-track">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Python</span>
+            <span>Flask</span>
+            <span>C++</span>
+            <span>Data Structures</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>OOP</span>
+            <span>UI Thinking</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Python</span>
+            <span>Flask</span>
+            <span>C++</span>
+            <span>Data Structures</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>OOP</span>
+            <span>UI Thinking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container fade-in">
+        <div class="section-heading">
+          <p class="section-kicker">Contact</p>
+          <h2>Let’s build something useful.</h2>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-item">
+            <span class="label">Phone</span>
+            <a href="tel:+251932966803">(+251) 932 966 803</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="label">Email</span>
+            <a href="mailto:amantade1996@gmail.com">amantade1996@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="label">GitHub</span>
+            <a href="https://github.com/AmanT2817" target="_blank" rel="noopener noreferrer">github.com/AmanT2817</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <p>© 2025 Amanuel Tadesse</p>
+      <p>Built with purpose.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
+
